@@ -1,0 +1,78 @@
+<h3>Search Customer</h3>
+<form class="example-form" style="margin:25px">
+    <mat-form-field class="example-full-width">
+        <mat-label>Enter mobile number</mat-label>
+        <input matInput placeholder="8887975604" [(ngModel)]="mobileNumber" name="mobileNumber"
+            (input)="onInputChange()">
+
+    </mat-form-field>
+
+    <!-- <a routerLink="beneficiary-details"> -->
+        <button [attr.disabled]="isDisabled ? true : null" disabled class="mx-5" (click)="getList()" mat-raised-button color="primary"
+        style="padding-left:10%;padding-right:10%;height: 45px;margin-top: -5px;">Continue</button>
+    <!-- </a> -->
+</form>
+
+<div style="margin:25px">
+    <h4>Important Instruction</h4>
+    <dl>
+        <dt>Please ensure to check following points before proceeding
+            for Domestic Money Transfer
+        </dt>
+        <br />
+        <dd>
+            <ul>
+                <li>
+                    Please recheck the Account Number and IFSC CODE before
+                    submitting the transaction, once submitted the transaction
+                    cannot be reversed.
+                </li>
+            </ul>
+        </dd>
+        <dd>
+            <ul>
+                <li>
+                    Please verify the Account Number and confirm Beneficiary
+                    name before initiating a transaction. Any transaction done
+                    with incorrect Beneficiary details will be the
+                    responsibility of the Merchant.
+                </li>
+            </ul>
+        </dd>
+        <dd>
+            <ul>
+                <li>
+                    In case a reversal is required for a wrong transaction, it
+                    will be subject to Beneficiary’s Bank approval.
+                </li>
+            </ul>
+        </dd>
+    </dl>
+    <h4 style="font-family: Poppins;font-weight: 600;">जरूरी सूचना</h4>
+    <dl style="margin-top: 1.5%">
+        <dt>कृपया पैसे भेजने से पहले निम्नलिखित बिंदु जांच ले</dt>
+        <br />
+        <dd>
+          <ul>
+            <li>
+                ट्रांसेक्शन करने से पहले कृपया अकाउंट नंबर और IFSC CODE को पुनः चेक कर लें। ट्रांसेक्शन 
+                करने के बाद रिफंड या रिवर्सल संभव नहीं होगा।
+            </li>
+          </ul>
+        </dd>
+        <dd>
+          <ul>
+            <li>
+                कृपया अकाउंट नंबर वेरिफाई करें और खाता धारक का नाम चेक कर लें। गलत बैंक या खाते में ट्रांसेक्शन करने पर ज़िम्मेदारी मर्चेंट की होगी।
+            </li>
+          </ul>
+        </dd>
+        <dd>
+          <ul>
+            <li>
+                गलत ट्रांसेक्शन का रिफंड बैंक की स्वीकृति पर निर्भर होगा।
+            </li>
+          </ul>
+        </dd>
+      </dl>
+</div>

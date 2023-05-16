@@ -1,0 +1,22 @@
+h3{
+    font-weight: 500;
+    margin:25px;
+}
+.example-button-row{
+    margin-top:5px;
+    margin-left: 25px;
+    margin-bottom: 30px;
+}
+.example-button-row .exc{
+    width: 160px;
+    height: 36;
+    font-size: 12px;
+    background-color: #00B0F0;
+}
+.table-head{
+    background-color: #ff0000 !important;
+    color:#fff;
+}
+table{
+    font-size: 12px;
+}

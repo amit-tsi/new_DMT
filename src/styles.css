@@ -1,0 +1,52 @@
+/* You can add global styles to this file, and also import other style files */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
+html, body { height: 100%; }
+body { margin: 0; font-family: 'Poppins', sans-serif; }
+*{
+    font-family: 'Poppins', sans-serif !important;
+}
+.mat-mdc-tab-group.mat-mdc-tab-group-stretch-tabs>.mat-mdc-tab-header .mat-mdc-tab{
+    flex-grow: 0 !important;
+}
+.mat-mdc-tab-labels{
+    border-bottom: 1px solid gray;
+}
+
+.mdc-tab__ripple::before, .mat-mdc-tab .mat-ripple-element, .mat-mdc-tab-header-pagination .mat-ripple-element, .mat-mdc-tab-link .mat-ripple-element{
+    background-color: red;
+}
+.mat-mdc-tab:not(.mat-mdc-tab-disabled) .mdc-tab-indicator__content--underline, .mat-mdc-tab-link:not(.mat-mdc-tab-disabled) .mdc-tab-indicator__content--underline{
+    border-color: red;
+}
+.mat-mdc-tab:not(.mat-mdc-tab-disabled).mdc-tab--active .mdc-tab__text-label, .mat-mdc-tab-link:not(.mat-mdc-tab-disabled).mdc-tab--active .mdc-tab__text-label{
+    color:#000;
+    font-weight: 500;
+}
+/* .mdc-text-field--filled:not(.mdc-text-field--disabled){
+    background-color: transparent;
+} */
+.mdc-text-field:not(.mdc-text-field--disabled) .mdc-floating-label {
+    color: rgba(0,0,0,.6);
+}
+.example-form .mat-mdc-form-field .mat-mdc-text-field-wrapper{
+    width: 250px !important;
+}
+tr{
+    height: 35px !important;
+}
+.mat-mdc-form-field-subscript-wrapper{
+    height:0px !important;
+}
+.mat-mdc-tab-body-wrapper{
+    margin-top:3%;
+}
+.mat-mdc-tab-body-content {
+    overflow: hidden !important;
+}
+.mat-elevation-z8, .mat-mdc-elevation-specific.mat-elevation-z8{
+    box-shadow: none;
+    border:1px solid black;
+}
+.mat-mdc-table tbody, .mat-mdc-table tfoot, .mat-mdc-table thead, .mat-mdc-cell, .mat-mdc-footer-cell, .mat-mdc-header-row, .mat-mdc-row, .mat-mdc-footer-row, .mat-mdc-table .mat-mdc-header-cell{
+    font-size: 12px !important;
+}

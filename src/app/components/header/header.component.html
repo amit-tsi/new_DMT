@@ -1,0 +1,160 @@
+<div class="contaier" style="height:170px">
+    <div class="row top-bar" style="--bs-gutter-x: none;">
+
+        <div class="col-md-1"></div>
+        <div class="col-md-10 main-div">
+            <img src="../../../assets/img/fpay_logo.png" class="img-responsive" />
+        </div>
+        <div class="col-md-1"></div>
+
+    </div>
+    <mat-card class="card">
+        <mat-card-content class="cards">
+            <div>
+                <div class="img_div">
+                    <img class="image" src="../../../assets/img/dmt.png">
+                </div>
+                <h5 style="text-align: center;">DMT</h5>
+            </div>
+
+            <div>
+                <div class="img_div">
+                    <img class="image" src="../../../assets/img/aeps.png">
+                </div>
+                <h5 style="text-align: center;">AePS</h5>
+            </div>
+
+            <div>
+                <div class="img_div">
+                    <img class="bill-img image" src="../../../assets/img/Frame.png">
+
+                </div>
+                <h5 style="text-align: center;">Bill Pay</h5>
+            </div>
+            <div>
+                <div class="img_div">
+                    <img class="image" src="../../../assets/img/dmr.png">
+                </div>
+                <h5 style="text-align: center;">Cash Drop</h5>
+            </div>
+            <div>
+                <div class="img_div">
+                    <img class="image" src="../../../assets/img/pan.png">
+                </div>
+                <h5 style="text-align: center;">PAN Card</h5>
+            </div>
+            <div>
+                <div class="img_div">
+                    <img class="image" src="../../../assets/img/train.png">
+
+                </div>
+                <h5 style="text-align: left;">Travel Booking</h5>
+            </div>
+            <div>
+                <div class="img_div">
+                    <img class="image" src="../../../assets/img/lic.png">
+                </div>
+                <h5 style="text-align: center;">LIC</h5>
+            </div>
+        </mat-card-content>
+    </mat-card>
+</div>
+<div class="nav">
+    <nav mat-tab-nav-bar>
+        <a mat-tab-link *ngFor="let link of navLinks" routerLink="{{ link.location }}" 
+        routerLinkActive #rla="routerLinkActive" [active]="rla.isActive">
+          <h4 class="text2">{{link.label}}</h4>
+        </a>
+    </nav>
+
+   
+      
+</div>
+<hr>
+<!-- <div class="container">
+    <div class="row">
+        <div class="col-md-1"></div>
+        <div class="col-md-10">
+            <h3>Search Customer</h3>
+            <form class="example-form" style="margin:25px">
+                <mat-form-field class="example-full-width">
+                    <mat-label>Enter mobile number</mat-label>
+                    <input matInput placeholder="8887975604" [(ngModel)]="mobileNumber" name="mobileNumber"
+                        (input)="onInputChange()">
+
+                </mat-form-field>
+
+                <button [attr.disabled]="isDisabled ? true : null" disabled class="mx-5" (click)="getList()"
+                    mat-raised-button color="primary"
+                    style="padding-left:10%;padding-right:10%;height: 45px;margin-top: -5px;">Continue</button>
+               
+            </form>
+
+            <div style="margin:25px">
+                <h4>Important Instruction</h4>
+                <dl>
+                    <dt>Please ensure to check following points before proceeding
+                        for Domestic Money Transfer
+                    </dt>
+                    <br />
+                    <dd>
+                        <ul>
+                            <li>
+                                Please recheck the Account Number and IFSC CODE before
+                                submitting the transaction, once submitted the transaction
+                                cannot be reversed.
+                            </li>
+                        </ul>
+                    </dd>
+                    <dd>
+                        <ul>
+                            <li>
+                                Please verify the Account Number and confirm Beneficiary
+                                name before initiating a transaction. Any transaction done
+                                with incorrect Beneficiary details will be the
+                                responsibility of the Merchant.
+                            </li>
+                        </ul>
+                    </dd>
+                    <dd>
+                        <ul>
+                            <li>
+                                In case a reversal is required for a wrong transaction, it
+                                will be subject to Beneficiary’s Bank approval.
+                            </li>
+                        </ul>
+                    </dd>
+                </dl>
+                <h4 style="font-family: Poppins;font-weight: 600;">जरूरी सूचना</h4>
+                <dl style="margin-top: 1.5%">
+                    <dt>कृपया पैसे भेजने से पहले निम्नलिखित बिंदु जांच ले</dt>
+                    <br />
+                    <dd>
+                        <ul>
+                            <li>
+                                ट्रांसेक्शन करने से पहले कृपया अकाउंट नंबर और IFSC CODE को पुनः चेक कर लें। ट्रांसेक्शन
+                                करने के बाद रिफंड या रिवर्सल संभव नहीं होगा।
+                            </li>
+                        </ul>
+                    </dd>
+                    <dd>
+                        <ul>
+                            <li>
+                                कृपया अकाउंट नंबर वेरिफाई करें और खाता धारक का नाम चेक कर लें। गलत बैंक या खाते में
+                                ट्रांसेक्शन करने पर ज़िम्मेदारी मर्चेंट की होगी।
+                            </li>
+                        </ul>
+                    </dd>
+                    <dd>
+                        <ul>
+                            <li>
+                                गलत ट्रांसेक्शन का रिफंड बैंक की स्वीकृति पर निर्भर होगा।
+                            </li>
+                        </ul>
+                    </dd>
+                </dl>
+            </div>
+        </div>
+        <div class="col-md-1"></div>
+    </div>
+</div> -->
